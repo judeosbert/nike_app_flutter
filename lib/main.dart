@@ -6,6 +6,8 @@ import 'package:music_app/ItemTile.dart';
 import 'package:music_app/custom/nike_icons_icons.dart';
 import 'package:music_app/dummy/DataManager.dart';
 
+import 'DetailScreenWidget.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -18,7 +20,12 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: "/" ,
+      routes: {
+        "/":(context) => MyHomePage(title: 'Flutter Demo Home Page'),
+        DetailScreenWidget.routeName:(context) => DetailScreenWidget(),
+
+      },
     );
   }
 }

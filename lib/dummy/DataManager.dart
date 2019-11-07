@@ -45,4 +45,12 @@ class DataManager{
   static List<ItemTileData> getDummyData() => _dummyShoesData;
 
   static getDataAt(int index) => _dummyShoesData[index];
+  static ItemTileData getByItemId(int id){
+    for(int i = 0 ; i < _dummyShoesData.length;i++){
+      if(id == _dummyShoesData[i].itemId){
+        return _dummyShoesData[i];
+      }
+    }
+    return null;
+  }
 }
