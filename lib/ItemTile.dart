@@ -18,6 +18,12 @@ class ItemTile extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.all(ScreenUtil.getInstance().setWidth(7)),
         decoration: BoxDecoration(
+          boxShadow: [BoxShadow(
+            color: Color(0x32E8E4E4),
+            blurRadius: 23,
+            spreadRadius: 1,
+            offset: Offset(0, 14)
+          )],
           color: Colors.white,
           borderRadius: BorderRadius.circular(ScreenUtil.getInstance().setWidth(8))
         ),
